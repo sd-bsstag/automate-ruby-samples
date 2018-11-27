@@ -15,5 +15,5 @@ jobs:
     steps:
       - checkout
       - run:
-         name: Move to cucumber/
+         name: Move to cucumber/ and Run the tests.
          command: cd cucumber/ && bundle install && bundle exec cucumber
