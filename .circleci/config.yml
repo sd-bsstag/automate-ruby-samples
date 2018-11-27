@@ -11,7 +11,12 @@ machine:
       SELENIUM_PLATFORM: WINDOWS
       SELENIUM_BROWSER: IE
       SELENIUM_VERSION: 9
-
+jobs:
   test:
     override:
       - bundle exec cucumber
+  workflows:
+  version: 2
+  test:
+    jobs:
+      - test
