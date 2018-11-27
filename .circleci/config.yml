@@ -2,6 +2,7 @@ version: 2
 machine:
     ruby:
       version: 2.0.0-p0
+    working_directory: ~/code
     environment:
       SELENIUM_HOST: hub-cloud.browserstack.com
       SELENIUM_PORT: 80
