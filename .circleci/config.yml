@@ -17,6 +17,6 @@ jobs:
       - bundle exec cucumber
   workflows:
   version: 2
-  test:
+  run_test:
     jobs:
       - test
