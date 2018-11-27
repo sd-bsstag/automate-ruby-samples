@@ -20,6 +20,4 @@ jobs:
       - run:
         name: Bundle Install
         command: bundle install
-      - run:
-        name: Run test
-        command: bundle exec cucumber
+      - run: bundle exec cucumber
