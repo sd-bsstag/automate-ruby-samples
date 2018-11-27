@@ -16,8 +16,4 @@ jobs:
       - checkout
       - run:
          name: Move to cucumber/
-         command: cd cucumber/
-         name: Bundle Install
-         command: bundle install
-         name: Run Test
-         command: bundle exec cucumber
+         command: cd cucumber/ && bundle install && bundle exec cucumber
