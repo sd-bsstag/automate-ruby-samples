@@ -12,6 +12,9 @@ machine:
       SELENIUM_VERSION: 9
 jobs:
   test:
- - checkout
- - cd cucumber/
- - bundle exec cucumber
+    steps:
+      - checkout
+      - run:
+         name: Move to cucumber/
+         command: cd cucumber/
+      - run: bundle exec cucumber
