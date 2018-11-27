@@ -18,6 +18,9 @@ jobs:
          name: Move to cucumber/
          command: cd cucumber/
       - run:
+         name: ls
+         command: ls
+      - run:
          name: Bundle Install
          command: bundle install
       - run:
